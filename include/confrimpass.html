@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="
+        user-scalable=no,
+        initial-scale=1,
+        maximum-scale=1,
+        minimum-scale=1,
+        width=device-width,
+        height=device-height"
+    />
+    <link rel="icon" href="./assets/upload/29-01-2022/icon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Message | Nguyễn Đình Chuân</title>
+  </head>
+<body>
+    <section class="container dflexCenter bgGray">
+        <div class="authen">
+            <h2 style="text-align: center;">Xác nhận</h2>
+            <span class="confirm">Chúng tôi đã gửi email đến <span class="to-email"><?=isset($email)?$email:''?>chuan123789@gmail.com</span></span>
+            <span class="confirm">Vui lòng kiểm tra lại email.</span>
+            <span class="confirm">Tôi chưa nhận được mã. <a class="grayColor" style="text-decoration: underline;">Lấy lại mã</a> sau <span class="re-time">60</span>s .</span>
+
+            <form method="get" class="formConfirm">
+                <div class="code">
+                    <input type="text" maxlength="1" name="number1" autocomplete="off">
+                    <input type="text" maxlength="1" name="number2" autocomplete="off">
+                    <input type="text" maxlength="1" name="number3" autocomplete="off">
+                    <input type="text" maxlength="1" name="number4" autocomplete="off">
+                </div>
+                <div class="submit">
+                    <button type="submit" class="btn btn-round btn-gray btn-sizeX confirm_submit">Xác nhận</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+
+    </script>
+</body>
+</html>
+

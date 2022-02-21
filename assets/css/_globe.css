@@ -1,0 +1,792 @@
+/* custom nút bấm */
+.btn {
+    display: inline-block;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-round {
+    border-radius: 100rem;
+}
+
+.btn-sizeX {
+    padding: 10px 30px;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+}
+
+.btn-gray {
+    background-color: var(--gray-color);
+}
+
+
+.btn-infor {
+    background-color: #0938af;
+}
+
+.btn.btn-gray {
+    cursor: default;
+}
+
+.sb-shadow {
+    border: 1px inset var(--white-color);
+}
+/* //custom nút bấm */
+
+/* các thuộc tính khác */
+.offEye {
+    display: none;
+}
+.bgGray {
+    background-color: var(--gray-color);
+}
+.jSPCenter {
+    justify-content: center !important;
+}
+.dflexCL {
+    display: flex;
+    flex-direction: column;
+}
+.dflexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invalid > input{
+    border-color: #ff0000;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.2);
+}
+/* //các thuộc tính khác */
+
+/* phần đăng nhập, đăng ký, quên mật khẩu */
+
+.authen {
+    width: 400px;
+    /* height: 350px; */
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    margin: 0;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--primary-color);
+    padding: 15px;
+}
+
+.authen > h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 15px;
+    color: var(--primary-color);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 7px; */
+    position: relative;
+}
+
+.form-group > span {
+    font-size: 1.4rem;
+    margin-bottom: 3px;
+}
+
+.form-group > input {
+    width: 100%;
+    padding: 8px;
+    transition: all .2s ease;
+    margin-bottom: 2px;
+}
+
+.eye {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.eye > ion-icon {
+    cursor: pointer;
+}
+
+.message-erorr {
+    font-size: 1.2rem;
+    color: red;
+    height: 18px;
+}
+
+.form-navigate {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.form-navigate>span {
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+.form-navigate>span::before {
+  content: '';
+  width: 100%;
+  height: 1.2px;
+  background-color: var(--primary-color);
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform-origin: center;
+  transform: scale(0,0);
+  transition: all .2s ease;
+}
+
+.eye > ion-icon:hover,
+.form-navigate>span:hover>a {
+    color: var(--primary-color);
+}
+.form-navigate>span:hover::before {
+  transform: scale(1,1);
+}
+
+.form-group:not(.invalid) > input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 10px rgba(4, 193, 184, 0.2);
+}
+
+.form-submit {
+    margin-top: 15px;
+}
+
+.form-submit > button {
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+/* quên mật khẩu */
+.confirm {
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.formConfirm >.code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.formConfirm >.code > input {
+    width: 40px;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.submit {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.submit > button {
+    color: var(--white-color);
+}
+
+.form-groups {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-groups > .form-group {
+    flex: 1;
+}
+
+.form-groups > .form-group:first-child {
+    margin-right: 5px;
+}
+
+/* /phần đăng nhập, đăng ky, quên mật khấu */
+
+
+/* phần trang chủ */
+.app {
+    width: 100%;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.avatar-icon,
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 100rem;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+}
+
+.header-top {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.header-top > span {
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search > form {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.search > form > input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #9d9d9d;
+    padding: 7px
+}
+
+.search > form > button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search > form > input:focus,
+.erorr_box-log,
+.message_form > .form_group > input:focus  {
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 10px rgba(4, 193, 184, 0.2);
+}
+
+.list_message {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.list_message-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.list_message-item+.list_message-item {
+    margin-top: 10px;
+}
+
+.list_message-avatar {
+    position: relative;
+}
+
+.icon-online {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: var(--green-color);
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    border-radius: 100rem;
+    border: 4px solid var(--white-color);
+}
+
+.list_message-infor {
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.infor_name,
+.message_no_send {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.infor_name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.message_no_send {
+    font-size: 1.3rem;
+}
+/* end phần trang chủ */
+
+
+/* chi tiết tin nhắn */
+.header__msg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 5px 7px;
+    border-bottom: 1px solid var(--white-color);
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.msg__infor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+}
+
+.msg__back {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.msg__back > a {
+    font-size: 1.7rem;
+    color: var(--white-color);
+}
+
+.msg_avt > .avatar-icon{
+    width: 25px;
+    height: 25px;
+}
+
+.msg > .avatar-icon{
+    width: 45px;
+    height: 45px;
+}
+
+.msg>.icon-online {
+    width: 17px;
+    height: 17px;
+}
+
+.msg__name {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.msg__status {
+    width: 17px;
+    height: 17px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 100rem;
+    text-align: center;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.message__controller {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-top: 1px solid var(--white-color);
+}
+
+.controller__attachs {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.controller__attachs > label {
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.attach_img {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message_form {
+    flex: 1;
+}
+.message_form {
+    display: flex;
+    align-items: center;
+}
+
+.message_form > .form_group{
+    flex: 1;
+}
+
+.message_form > .form_group > input{
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.form_send {
+    padding-left: 5px;
+}
+
+.form_send > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+.views_message {
+    padding: 60px 7px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.msg_right > .desc {
+    align-items: flex-end;
+}
+
+.desc {
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 70%;
+    font-size: 1.4rem;
+    /* background-color: var(--white-color); */
+    font-weight: 500;
+}
+
+:not(.showTime) > .datetime{
+    display: none;
+}
+
+.desc > span {
+    display: block;
+}
+
+.desc > span.content {
+    border-radius: 10px;
+    background-color: var(--white-color);
+    padding: 5px;
+}
+
+.msg_item {
+    align-items: flex-end;
+    position: relative;
+}
+
+.msg_right  >.desc > .datetime {
+    text-align: right;
+}
+
+.msg_right > .msg_avt {
+    display: none;
+}
+
+
+.datetime {
+    display: block;
+    font-size: 1.2rem;
+}
+
+/* .showTime > .datetime {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+} */
+
+.msg_right {
+    justify-content: flex-end;
+}
+/* //eng chi tiết tin nhắn */
+
+
+/* custom sroll bar */
+:is(.views_message,.list_message)::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+:is(.views_message,.list_message)::-webkit-scrollbar {
+    display: none;
+    width: 3px;
+}
+:is(.views_message,.list_message)::-webkit-scrollbar-thumb {
+    background: #767676;
+    border-radius: 10px;
+}
+
+.views_message::-webkit-scrollbar-track  {
+    background-color: #C2D2E4;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 30px;
+    background-color: #0A4C95;
+}
+/* end custuom sroll bar */
+
+.search {
+    position: relative;
+}
+
+.result__searching {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    padding: 5px;
+    z-index: 999;
+    display: none;
+}
+
+.erorr_box-log {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    background-color: #9d9d9d;
+    text-align: center;
+    padding: 6px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+}
+
+.menu-left {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 45%;
+    background-color: #04c1b8;
+    box-shadow: 10px 0px 15px rgba(94, 94, 94, 0.5);
+    z-index: 99999;
+    padding: 10px;
+    border-radius: 5px 0px 5px;
+}
+
+.overlay_nav {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+#menu_nav:checked ~ .menu-left{
+    left: 0;
+}
+
+#menu_nav:checked ~ .overlay_nav{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-left ul li {
+    /* border-bottom: 1px solid #333; */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.menu-left ul li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: #4e4e4e;
+    bottom: 0;
+    left: 0;
+    transform: scale(0,0);
+    transform-origin: center;
+    transition: all .2s ease;
+}
+
+.menu-left ul li:hover::before {
+    transform: scale(1,1);
+}
+
+.menu-left ul li a{
+    font-size: 1.7rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.menu-left ul li a .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.offline {
+    display: none;
+}
+
+.overlay_nav {
+    position: absolute;
+    inset: 0;
+    background-color: rgb(78 78 78 / 33%);
+    z-index: 9999;
+}
+
+.overlay_nav,
+.menu-left {
+    transition: all .3s ease;
+}
+
+.menu-left > h2{
+    font-size: 2rem;
+    margin-bottom: 7px;
+}
+.people {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+.information_thumbnail {
+    /* width: 100%; */
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.information_thumbnail > .people_overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgb(78 78 78 / 35%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 1;
+    visibility: hidden;
+}
+
+.information_thumbnail > .people_overlay > label {
+    font-size: 1.5rem;
+    color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.information_thumbnail > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.information_thumbnail:hover > .people_overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.information_thumbnail:hover > .people_overlay > label {
+    opacity: 1;
+    visibility: visible;
+}
+
+.to-email {
+    text-decoration: underline;
+}
+
+.grayColor {
+    color: #4e4e4e;
+}
+
+div.attachs_views {
+    height: 100px;
+    /* width: 100%; */
+    background-color: #C2D2E4;
+    position: absolute;
+    bottom: calc(100% + 1px);
+    left: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+/* 
+div.attachs_views::-webkit-scrollbar {
+    height: 3px;
+} */
+.attachs_views-items {
+    width: 150px;
+    height: 100%;
+    position: relative;
+    margin-left: 5px;
+    margin-left: 5px;
+    margin-inline: 5px;
+}
+
+.attachs_views-items > img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.attachs_views-items > .close {
+    position: absolute;
+    position: -webkit-absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 450px) {
+    .app {
+        width: 450px;
+    }
+}

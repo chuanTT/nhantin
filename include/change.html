@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="
+        user-scalable=no,
+        initial-scale=1,
+        maximum-scale=1,
+        minimum-scale=1,
+        width=device-width,
+        height=device-height"
+    />
+    <link rel="icon" href="./assets/upload/29-01-2022/icon.jpg" type="image/jpg">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Message | Nguyễn Đình Chuân</title>
+  </head>
+  <body class="bgGray">
+    <div class="container dflexCenter">
+        <div class="app">
+            <input type="checkbox" hidden id="menu_nav">
+            <label class="overlay_nav" for="menu_nav"></label>
+            <label class="menu-left" for="menu_nav">
+                <h2>Menu</h2>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="icon">
+                                <ion-icon name="people-circle-outline"></ion-icon>
+                            </span>
+                            <span>
+                                Thông tin cá nhân
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="icon">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                            </span>
+                            <span>
+                                Đổi mật khẩu
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="icon">
+                                <ion-icon name="log-out-outline"></ion-icon>
+                            </span>
+                            <span>
+                                Đăng xuất
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </label>
+            <div class="header-top">
+                <label for="menu_nav" class="avatar" style="background-image: url(./assets/upload/29-01-2022/Bo-suu-tap-1001-hinh-anh-mang-dep-an-tuong-nhat-nam-2021.jpg);"></label>
+                <span>Chat</span>
+            </div>
+            <div class="form-change dflexCL jSPCenter">
+                <h2 style="text-align: center;">Quên mật khẩu</h2>
+                <form method="post" class="form-authen">
+                    <div class="form-group">
+                      <span>Mật khẩu cũ</span>
+                      <input type="password" name="password" placeholder="VD: 12345" autocomplete="off">
+                      <span class="message-erorr"></span>
+                    </div>
+                    <div class="form-group">
+                        <span>Mật khẩu mới</span>
+                        <input type="password" name="username" placeholder="VD: 12345" autocomplete="off">
+                        <span class="message-erorr"></span>
+                    </div>
+                    <div class="form-group">
+                        <span>Xác nhận mật khẩu mới</span>
+                        <input type="password" name="username" placeholder="VD: 12345" autocomplete="off">
+                        <span class="message-erorr"></span>
+                    </div>
+                  <div class="form-submit">
+                      <button class="btn btn-round btn-gray btn-sizeX" type="submit">Đổi</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
